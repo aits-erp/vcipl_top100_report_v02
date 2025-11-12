@@ -1,0 +1,43 @@
+{
+    "name": "osdms",
+    "report_name": "OSDMS",
+    "doctype": "Sales Invoice",
+    "is_standard": "Yes",
+    "filters": [
+        {
+            "fieldname": "Customer_group",
+            "label": "Customer Group",
+            "fieldtype": "Link",
+            "options": "Customer Group",
+            "reqd": 0
+        },
+        {
+            "fieldname": "invoice_month",
+            "label": "Invoice Month",
+            "fieldtype": "Date",
+            "default": "Today",
+            "reqd": 0
+        },
+        {
+            "fieldname": "company",
+            "label": "Company",
+            "fieldtype": "Link",
+            "options": "Company",
+            "default": "",
+            "reqd": 0
+        }
+    ],
+    "reference_doctype": "Sales Invoice",
+    "report_type": "Script Report",
+    "roles": [
+        {
+            "role": "Accounts User"
+        },
+        {
+            "role": "Accounts Manager"
+        },
+        {
+            "role": "System Manager"
+        }
+    ]
+}
